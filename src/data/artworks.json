@@ -1,5 +1,14 @@
 [
   {
+    "id": "hanumanji",
+    "title": "Hanumanji",
+    "category": "Commission Work",
+    "medium": "Acrylic on canvas",
+    "description": "Commission work on 10×12 inches canvas",
+    "image": "/images/hanumanji.jpg",
+    "featured": false
+  },
+  {
     "id": "old-man",
     "title": "Old Man",
     "category": "Graphite Portraits",
