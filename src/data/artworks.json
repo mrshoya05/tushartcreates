@@ -1,13 +1,5 @@
 [
-  {
-    "id": "testing",
-    "title": "Testing",
-    "category": "Graphite Portraits",
-    "medium": "Testing",
-    "description": "Hey. Iam testing my web",
-    "image": "/images/testing.jpg",
-    "featured": false
-  },
+
   {
     "id": "hanumanji",
     "title": "Hanumanji",
