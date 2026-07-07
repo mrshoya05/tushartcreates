@@ -23,7 +23,7 @@ export default function About() {
             Tushar
           </h2>
           <p className="text-brown text-base sm:text-lg leading-relaxed mb-6 text-balance">
-            I&apos;m Tushar Parcha, currently pursuing my bachelor&apos;s from
+            I&apos;m Tushar Parcha, currently pursuing my masters&apos;s from
             DAV College, Dehradun. I&apos;m a passionate visual artist who
             loves expressing emotion and detail through graphite and charcoal
             portraits. My creative interests also extend into freehand
