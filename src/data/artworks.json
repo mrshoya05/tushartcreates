@@ -1,0 +1,137 @@
+[
+  {
+    "id": "old-man",
+    "title": "Old Man",
+    "category": "Graphite Portraits",
+    "medium": "Graphite on paper",
+    "description": "A hyper-realistic graphite study exploring the texture and weight of age.",
+    "image": "/images/old-man.jpg",
+    "featured": true
+  },
+  {
+    "id": "alia-bhatt",
+    "title": "Alia Bhatt",
+    "category": "Graphite Portraits",
+    "medium": "Graphite on paper",
+    "description": "A detailed graphite portrait of Bollywood actor Alia Bhatt.",
+    "image": "/images/alia-bhatt.jpg",
+    "featured": true
+  },
+  {
+    "id": "virat-kohli",
+    "title": "Virat Kohli",
+    "category": "Graphite Portraits",
+    "medium": "Graphite on paper",
+    "description": "A graphite portrait capturing a candid, unguarded smile.",
+    "image": "/images/virat-kohli.jpg",
+    "featured": true
+  },
+  {
+    "id": "portrait-study-saree",
+    "title": "Portrait Study",
+    "category": "Graphite Portraits",
+    "medium": "Graphite on paper",
+    "description": "A fine-detail graphite portrait study, rendered in soft tonal layers.",
+    "image": "/images/portrait-study-saree.jpg",
+    "featured": false
+  },
+  {
+    "id": "pen-sketch-hanuman",
+    "title": "Hanuman Ji",
+    "category": "Pen Sketching",
+    "medium": "Ballpoint pen on paper",
+    "description": "A freehand ballpoint pen sketch built entirely from cross-hatched line work.",
+    "image": "/images/pen-sketch-hanuman.jpg",
+    "featured": true
+  },
+  {
+    "id": "pen-sketch-hanuman-2",
+    "title": "Hanuman Ji — Study II",
+    "category": "Pen Sketching",
+    "medium": "Ballpoint pen on paper",
+    "description": "A second pen study of the same subject, refining pose and shading.",
+    "image": "/images/pen-sketch-hanuman-2.jpg",
+    "featured": false
+  },
+  {
+    "id": "pen-sketch-portrait-1",
+    "title": "Portrait Study I",
+    "category": "Pen Sketching",
+    "medium": "Ballpoint pen on paper",
+    "description": "A pen portrait built from fine hatching, no pencil underlayer.",
+    "image": "/images/pen-sketch-portrait-1.jpg",
+    "featured": false
+  },
+  {
+    "id": "pen-sketch-portrait-2",
+    "title": "Portrait Study II",
+    "category": "Pen Sketching",
+    "medium": "Ballpoint pen on paper",
+    "description": "A quick, expressive pen portrait sketched freehand.",
+    "image": "/images/pen-sketch-portrait-2.jpg",
+    "featured": false
+  },
+  {
+    "id": "charcoal-portrait-1",
+    "title": "Charcoal Study I",
+    "category": "Charcoal Work",
+    "medium": "Charcoal on paper",
+    "description": "A soft charcoal portrait study built up in broad tonal strokes.",
+    "image": "/images/charcoal-portrait-1.jpg",
+    "featured": true
+  },
+  {
+    "id": "charcoal-eye-study",
+    "title": "Eye Study",
+    "category": "Charcoal Work",
+    "medium": "Charcoal on paper",
+    "description": "A close-up charcoal study focused on light, lash detail, and depth.",
+    "image": "/images/charcoal-eye-study.jpg",
+    "featured": true
+  },
+  {
+    "id": "charcoal-portrait-2",
+    "title": "Charcoal Study II",
+    "category": "Charcoal Work",
+    "medium": "Charcoal on paper",
+    "description": "A lighter, quicker charcoal portrait study.",
+    "image": "/images/charcoal-portrait-2.jpg",
+    "featured": false
+  },
+  {
+    "id": "commission-roorkee",
+    "title": "Commission — Roorkee",
+    "category": "Commission Work",
+    "medium": "Graphite on paper",
+    "description": "A custom graphite commission for a client in Roorkee.",
+    "image": "/images/commission-roorkee.jpg",
+    "featured": true
+  },
+  {
+    "id": "commission-bangalore",
+    "title": "Commission — Bangalore (A2)",
+    "category": "Commission Work",
+    "medium": "Graphite on paper, A2",
+    "description": "First A2-size commission, a graphite portrait of a couple, for a client in Bangalore.",
+    "image": "/images/commission-bangalore.jpg",
+    "featured": true
+  },
+  {
+    "id": "commission-dehradun",
+    "title": "Commission — Dehradun (A3)",
+    "category": "Commission Work",
+    "medium": "Graphite on paper, A3",
+    "description": "An A3-size graphite commission for a client in Dehradun.",
+    "image": "/images/commission-dehradun.jpg",
+    "featured": false
+  },
+  {
+    "id": "couple-portrait-wip",
+    "title": "Couple Portrait",
+    "category": "Commission Work",
+    "medium": "Graphite on paper",
+    "description": "A commissioned couple portrait, shown fresh off the drawing board.",
+    "image": "/images/couple-portrait-wip.jpg",
+    "featured": false
+  }
+]

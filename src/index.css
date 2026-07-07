@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f3efe2;
+  --color-sand: #dcd6be;
+  --color-olive: #b7b392;
+  --color-olive-dark: #8a8768;
+  --color-brown: #5c4b3a;
+  --color-brown-deep: #3e3227;
+
+  --font-display: "Bebas Neue", "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-brown-deep font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-brown text-cream;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
