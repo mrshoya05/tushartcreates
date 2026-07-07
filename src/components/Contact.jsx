@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle, Phone, Mail } from "lucide-react";
 import InstagramIcon from "./icons/InstagramIcon";
 import Reveal from "./Reveal";
+import ImageReveal from "./ImageReveal";
 import { CONTACT, whatsappLink, mailtoLink, telLink } from "../data/contact";
 
 const CHANNELS = [
@@ -66,10 +67,10 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                whileHover={{ y: -3 }}
-                className="flex items-center gap-3 rounded-2xl bg-cream/10 hover:bg-cream/15 border border-cream/15 px-4 py-3.5 transition-colors"
+                whileHover={{ y: -3, borderColor: "var(--color-accent)" }}
+                className="group flex items-center gap-3 rounded-2xl bg-cream/10 hover:bg-cream/15 border border-cream/15 px-4 py-3.5 transition-colors"
               >
-                <span className="rounded-full bg-cream/15 p-2.5 text-cream">
+                <span className="rounded-full bg-cream/15 group-hover:bg-accent p-2.5 text-cream transition-colors">
                   <c.icon size={18} />
                 </span>
                 <span>
@@ -86,13 +87,16 @@ export default function Contact() {
         </Reveal>
 
         <Reveal delay={0.15}>
-          <div className="mx-auto max-w-sm rounded-3xl overflow-hidden shadow-2xl">
-            <img
-              src="/images/contact-portrait.jpg"
-              alt="Tushar Parcha with a finished graphite portrait, framed"
-              className="w-full object-cover aspect-[3/4]"
-              loading="lazy"
-            />
+          <div className="relative mx-auto max-w-sm">
+            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-accent/30 to-cream/10 blur-xl -z-10" />
+            <ImageReveal className="rounded-3xl shadow-2xl">
+              <img
+                src="/images/contact-portrait.jpg"
+                alt="Tushar Parcha with a finished graphite portrait, framed"
+                className="w-full object-cover aspect-[3/4]"
+                loading="lazy"
+              />
+            </ImageReveal>
           </div>
         </Reveal>
       </div>

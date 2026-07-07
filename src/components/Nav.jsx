@@ -30,7 +30,7 @@ export default function Nav() {
           href="#top"
           className="font-display text-2xl tracking-wide text-brown-deep"
         >
-          Tushar Creates
+          Tushar<span className="text-accent">.</span>Creates
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -38,17 +38,20 @@ export default function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-brown hover:text-brown-deep transition-colors"
+              className="group relative text-sm font-medium text-brown hover:text-brown-deep transition-colors"
             >
               {l.label}
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <a
+          <motion.a
             href="#contact"
-            className="rounded-full bg-brown-deep text-cream text-sm font-semibold px-5 py-2 hover:bg-brown transition-colors"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.96 }}
+            className="shine-sweep rounded-full bg-brown-deep text-cream text-sm font-semibold px-5 py-2 hover:bg-accent transition-colors"
           >
             Order a Portrait
-          </a>
+          </motion.a>
         </div>
 
         <button

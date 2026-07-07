@@ -50,7 +50,7 @@ export default function Lightbox({ artwork, onClose }) {
                 <X size={18} />
               </button>
 
-              <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive-dark mb-2">
+              <p className="uppercase tracking-[0.2em] text-xs font-semibold text-accent mb-2">
                 {artwork.category}
               </p>
               <h3 className="font-display text-3xl sm:text-4xl text-brown-deep mb-2">
@@ -61,17 +61,19 @@ export default function Lightbox({ artwork, onClose }) {
                 {artwork.description}
               </p>
 
-              <a
+              <motion.a
                 href={whatsappLink(
                   `Hi Tushar, I'm interested in a piece like "${artwork.title}" — could we talk about a commission?`
                 )}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-brown-deep text-cream font-semibold text-sm sm:text-base px-6 py-3 hover:bg-brown transition-colors"
+                whileHover={{ y: -3 }}
+                whileTap={{ scale: 0.96 }}
+                className="shine-sweep inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-accent to-brown-deep text-cream font-semibold text-sm sm:text-base px-6 py-3 transition-colors"
               >
                 <MessageCircle size={18} />
                 Order a piece like this
-              </a>
+              </motion.a>
             </div>
           </motion.div>
         </motion.div>

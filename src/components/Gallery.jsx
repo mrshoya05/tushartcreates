@@ -26,12 +26,19 @@ export default function Gallery() {
     <section id="gallery" className="py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal className="text-center mb-10 sm:mb-14">
-          <p className="uppercase tracking-[0.25em] text-xs sm:text-sm font-semibold text-olive-dark mb-3">
+          <p className="uppercase tracking-[0.25em] text-xs sm:text-sm font-semibold text-accent mb-3">
             The Art
           </p>
           <h2 className="font-display text-4xl sm:text-5xl text-brown-deep">
             Selected Works
           </h2>
+          <motion.span
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-3 block h-[3px] w-16 bg-accent mx-auto origin-left rounded-full"
+          />
         </Reveal>
 
         <div className="flex flex-wrap justify-center gap-2 mb-10 sm:mb-12">
@@ -49,7 +56,7 @@ export default function Gallery() {
               {category === cat && (
                 <motion.span
                   layoutId="category-pill"
-                  className="absolute inset-0 rounded-full bg-brown-deep"
+                  className="absolute inset-0 rounded-full bg-gradient-to-r from-brown-deep to-accent-dark"
                   transition={{ type: "spring", stiffness: 350, damping: 30 }}
                 />
               )}

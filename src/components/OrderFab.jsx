@@ -26,7 +26,8 @@ export default function OrderFab() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 12, scale: 0.8 }}
               transition={{ duration: 0.25, delay: i * 0.05 }}
-              className="flex items-center gap-2 rounded-full bg-brown-deep text-cream shadow-lg pl-4 pr-3 py-2.5"
+              whileHover={{ x: -4 }}
+              className="flex items-center gap-2 rounded-full bg-brown-deep text-cream shadow-lg pl-4 pr-3 py-2.5 hover:bg-accent transition-colors"
             >
               <span className="text-sm font-semibold whitespace-nowrap">
                 {action.label}
@@ -38,25 +39,37 @@ export default function OrderFab() {
           ))}
       </AnimatePresence>
 
-      <motion.button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-label="Order options"
-        animate={open ? {} : { scale: [1, 1.06, 1] }}
-        transition={
-          open ? { duration: 0.2 } : { duration: 2.2, repeat: Infinity, ease: "easeInOut" }
-        }
-        whileTap={{ scale: 0.92 }}
-        className="rounded-full bg-brown-deep text-cream shadow-xl p-4"
-      >
-        <motion.span
-          animate={{ rotate: open ? 45 : 0 }}
-          transition={{ duration: 0.25 }}
-          className="block"
+      <div className="relative">
+        {!open && (
+          <>
+            <motion.span
+              animate={{ scale: [1, 1.8], opacity: [0.5, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
+              className="absolute inset-0 rounded-full bg-accent"
+            />
+            <motion.span
+              animate={{ scale: [1, 1.8], opacity: [0.5, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeOut", delay: 1 }}
+              className="absolute inset-0 rounded-full bg-accent"
+            />
+          </>
+        )}
+        <motion.button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-label="Order options"
+          whileTap={{ scale: 0.92 }}
+          className="relative rounded-full bg-gradient-to-br from-accent to-brown-deep text-cream shadow-xl p-4"
         >
-          <Plus size={22} />
-        </motion.span>
-      </motion.button>
+          <motion.span
+            animate={{ rotate: open ? 45 : 0 }}
+            transition={{ duration: 0.25 }}
+            className="block"
+          >
+            <Plus size={22} />
+          </motion.span>
+        </motion.button>
+      </div>
     </div>
   );
 }
